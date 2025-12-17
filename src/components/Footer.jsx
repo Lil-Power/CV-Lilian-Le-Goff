@@ -36,7 +36,7 @@ function Footer() {
               <a href="https://github.com/Lil-Power" target="_blank">
                 <img
                   className="footer-img m-2"
-                  src="/img/logo-github.png"
+                  src={`${import.meta.env.BASE_URL}img/logo-github.png`}
                   alt="Logo GitHub"
                 />
               </a>
@@ -46,7 +46,7 @@ function Footer() {
               >
                 <img
                   className="footer-img"
-                  src="/img/logo-linkedin.png"
+                  src={`${import.meta.env.BASE_URL}img/logo-linkedin.png`}
                   alt="Logo GitHub"
                 />
               </a>

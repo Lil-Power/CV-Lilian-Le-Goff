@@ -6,7 +6,7 @@ function Contact() {
       <div>
         <img
           className="img-fluid flex-grow-1"
-          src="/img/banner.jpg"
+          src={`${import.meta.env.BASE_URL}img/banner.jpg`}
           alt="bannière de la page"
         />
       </div>

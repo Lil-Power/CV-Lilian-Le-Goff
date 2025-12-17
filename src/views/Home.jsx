@@ -6,7 +6,7 @@ function Home() {
       <div className="hero text-center pt-5">
         <div className="d-flex justify-content-center mb-3">
           <img
-            src="/img/profil-cv.jpeg"
+            src={`${import.meta.env.BASE_URL}img/profil-cv.jpeg`}
             alt="Photo de profil de Lilian Le Goff"
             className="rounded-circle img-container"
             width="200"

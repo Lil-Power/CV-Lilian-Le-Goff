@@ -6,7 +6,7 @@ function About() {
       <div>
         <img
           className="img-fluid flex-grow-1"
-          src="/img/banner.jpg"
+          src={`${import.meta.env.BASE_URL}img/banner.jpg`}
           alt="bannière de la page"
         />
       </div>
@@ -51,54 +51,90 @@ function About() {
           </div>
 
           {/* Compétences */}
-          <h2 className="fw-bold h1-with-underline h2-about">Compétences</h2>
+          <h2 className="fw-bold h1-with-underline h2-about mb-5">
+            Compétences
+          </h2>
+
           <div className="container text-center">
-            <div className="row row-cols-4">
+            {/* Première ligne */}
+            <div className="row row-cols-1 row-cols-md-4 g-4 align-items-stretch">
               <div className="col">
-                <div className="card">
+                <div className="card card-depth skill-card">
                   <img
-                    src="/img/logo-html.png"
-                    className="card-img-top"
+                    src={`${import.meta.env.BASE_URL}img/html-5.png`}
+                    className="skill-img mt-4"
                     alt="logo du langage HTML"
                   />
-                  <div className="card-body">
-                    <p className="card-text text-center fs-2">★★★★☆</p>
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★★☆</p>
                   </div>
                 </div>
               </div>
+
               <div className="col">
-                <div className="card">
+                <div className="card card-depth skill-card">
                   <img
-                    src="/img/logo-css.png"
-                    className="card-img-top"
+                    src={`${import.meta.env.BASE_URL}img/css-3.png`}
+                    className="skill-img mt-4"
                     alt="logo du langage CSS"
                   />
-                  <div className="card-body">
-                    <p className="card-text text-center fs-2">★★★★☆</p>
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★★☆</p>
                   </div>
                 </div>
               </div>
+
               <div className="col">
-                <div className="card">
+                <div className="card card-depth skill-card">
                   <img
-                    src="/img/logo-bootstrap.png"
-                    className="card-img-top"
-                    alt="logo de la librairie bootsrap"
+                    src={`${import.meta.env.BASE_URL}img/bootstrap.png`}
+                    className="skill-img mt-4"
+                    alt="logo de la librairie Bootstrap"
                   />
-                  <div className="card-body">
-                    <p className="card-text text-center fs-2">★★★☆☆</p>
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★★☆</p>
                   </div>
                 </div>
               </div>
+
               <div className="col">
-                <div className="card">
+                <div className="card card-depth skill-card">
                   <img
-                    src="/img/logo-js.png"
-                    className="card-img-top"
+                    src={`${import.meta.env.BASE_URL}img/js.png`}
+                    className="skill-img mt-4"
                     alt="logo du langage JavaScript"
                   />
-                  <div className="card-body">
-                    <p className="card-text text-center fs-2">★★★☆☆</p>
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★☆☆</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Seconde ligne */}
+            <div className="row row-cols-1 row-cols-md-2 g-4 mt-4 align-items-stretch">
+              <div className="col">
+                <div className="card card-depth skill-card">
+                  <img
+                    src={`${import.meta.env.BASE_URL}img/wordpress.png`}
+                    className="skill-img mt-4"
+                    alt="logo WordPress"
+                  />
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★★☆</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card card-depth skill-card">
+                  <img
+                    src={`${import.meta.env.BASE_URL}img/shopify.png`}
+                    className="skill-img mt-4"
+                    alt="logo Shopify"
+                  />
+                  <div className="card-body p-2">
+                    <p className="card-text fs-4">★★★☆☆</p>
                   </div>
                 </div>
               </div>
