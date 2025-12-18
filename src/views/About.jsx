@@ -121,7 +121,7 @@ function About() {
                     alt="logo WordPress"
                   />
                   <div className="card-body p-2">
-                    <p className="card-text fs-4">★★★★☆</p>
+                    <p className="card-text fs-4">★★★☆☆</p>
                   </div>
                 </div>
               </div>
